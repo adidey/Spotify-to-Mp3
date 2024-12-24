@@ -11,9 +11,9 @@ from PIL import ImageTk, Image
 from io import BytesIO
 
 # Spotify API Setup
-SPOTIFY_CLIENT_ID = '4a477e5b6497416bba8da1a7d68e4a7c'
-SPOTIFY_CLIENT_SECRET = 'f9b5f43e80ec4f7295a1b2aac662f5d2'
-SPOTIFY_REDIRECT_URI = 'http://localhost:8888/callback'
+SPOTIFY_CLIENT_ID = 'CLIENT_ID'
+SPOTIFY_CLIENT_SECRET = 'SECRET'
+SPOTIFY_REDIRECT_URI = 'URI'
 
 sp = spotipy.Spotify(auth_manager=SpotifyOAuth(
     client_id=SPOTIFY_CLIENT_ID,
@@ -24,7 +24,7 @@ sp = spotipy.Spotify(auth_manager=SpotifyOAuth(
 
 # YouTube API Setup
 YOUTUBE_API_KEY = 'YOUTUBE_API_KEY'
-youtube = build('youtube', 'v3', developerKey='AIzaSyB0XyaohMpUpSL_64iFD96YPCukp-lJsIQ')
+youtube = build('youtube', 'v3', developerKey='YOUTUBE API ID')
 
 # Function to search for a song on Spotify
 def search_spotify(song_name, artist_name):
